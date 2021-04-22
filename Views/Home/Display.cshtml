@@ -1,0 +1,18 @@
+
+
+<h1>@ViewBag.food.Name</h1>
+
+<h2>Type: @ViewBag.food.Type</h2>
+<h3>Description:</h3>
+<p>@ViewBag.food.Description</p>
+
+<form action = "/edit/@ViewBag.food.FruitsAndVegID" method = "post">
+<button>edit</button>
+</form>
+
+<form action = "/@ViewBag.food.FruitsAndVegID/delete" method = "Post">
+    <button>Delete</button>
+</form>
+
+<a href="/">home</a>
+

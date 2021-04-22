@@ -1,0 +1,11 @@
+﻿<h1>Fruits and Vegetable</h1>
+<p>Here are the List of fruits and Vegetable</p>
+
+<a href = "new">Add Fruits and Vegetable</a>
+
+@{
+    @foreach(var fruit in ViewBag.user){
+        <p> Food: <a href = "/@fruit.FruitsAndVegID"> @fruit.Name</a>, Type: @fruit.Type, Created : @fruit.Created_At</p>
+
+    }
+}
